@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a1a2e;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+#menu-screen, #game-over-screen {
+  z-index: 100;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu-container {
+  text-align: center;
+  color: #fff;
+}
+
+.menu-container h1 {
+  text-shadow: 0 0 20px #ffc86480;
+  color: gold;
+  letter-spacing: .3em;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.menu-container button {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: linear-gradient(#4a7c59 0%, #2d5a3d 100%);
+  border: 3px solid #6b8e23;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  transition: all .3s;
+}
+
+.menu-container button:hover {
+  background: linear-gradient(#5a8c69 0%, #3d6a4d 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #6b8e2399;
+}
+
+.menu-container p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#game-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#game-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#hud {
+  pointer-events: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#crosshair {
+  color: #ff3232e6;
+  text-shadow: 0 0 5px #000c;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#health-bar {
+  background: #0009;
+  border: 2px solid #444;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  overflow: hidden;
+}
+
+#health-fill {
+  background: #4f4;
+  width: 100%;
+  height: 100%;
+  transition: width .3s;
+}
+
+#health-text {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#reload-indicator {
+  color: #fc0;
+  text-shadow: 0 0 10px #000c;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#minimap {
+  background: #000000b3;
+  border: 2px solid #666;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+#minimap canvas {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=tanchiki.4d663569.css.map */

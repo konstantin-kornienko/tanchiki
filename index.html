@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang=ru><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Танчики - 3D Tank Game</title><link rel=stylesheet href=tanchiki.9dc55806.css><body>
+  <div id=menu-screen>
+    <div class=menu-container>
+      <h1>ТАНЧИКИ</h1>
+      <button id=start-button>Начать игру</button>
+    </div>
+  </div>
+
+  <div id=game-container style=display:none>
+    <canvas id=game-canvas></canvas>
+    <div id=hud>
+      <div id=crosshair>+</div>
+      <div id=health-bar>
+        <div id=health-fill></div>
+        <span id=health-text>100</span>
+      </div>
+      <div id=reload-indicator style=display:none>Перезарядка...</div>
+      <div id=minimap></div>
+    </div>
+  </div>
+
+  <div id=game-over-screen style=display:none>
+    <div class=menu-container>
+      <h1 id=game-over-title>Игра окончена</h1>
+      <p id=game-over-message></p>
+      <button id=restart-button>В главное меню</button>
+    </div>
+  </div>
+
+  <script type=module src=tanchiki.e83c8143.js></script>
+
+
