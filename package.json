@@ -1,0 +1,27 @@
+{
+  "name": "tanchiki",
+  "version": "1.0.0",
+  "description": "3D танковая игра на Three.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "game",
+    "tanks",
+    "threejs",
+    "3d"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.6",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "parcel": "^2.16.3",
+    "three": "^0.182.0"
+  }
+}
