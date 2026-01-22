@@ -1,0 +1,19 @@
+{
+  "name": "tanchiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "build:zip": "npm run build && (cd dist && zip -r ../dist.zip .)",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "vitest": "^1.4.0"
+  }
+}
